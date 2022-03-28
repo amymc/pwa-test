@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/pwa-test/static/css/main.e6c13ad2.css",
+    "main.js": "/pwa-test/static/js/main.4f1e0cce.js",
+    "static/css/620.b4feb15a.chunk.css": "/pwa-test/static/css/620.b4feb15a.chunk.css",
+    "static/js/620.1050120d.chunk.js": "/pwa-test/static/js/620.1050120d.chunk.js",
+    "static/css/538.b4feb15a.chunk.css": "/pwa-test/static/css/538.b4feb15a.chunk.css",
+    "static/js/538.960ff58b.chunk.js": "/pwa-test/static/js/538.960ff58b.chunk.js",
+    "static/js/377.1614e686.chunk.js": "/pwa-test/static/js/377.1614e686.chunk.js",
+    "service-worker.js": "/pwa-test/service-worker.js",
+    "static/media/logo.svg": "/pwa-test/static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
+    "index.html": "/pwa-test/index.html",
+    "main.e6c13ad2.css.map": "/pwa-test/static/css/main.e6c13ad2.css.map",
+    "main.4f1e0cce.js.map": "/pwa-test/static/js/main.4f1e0cce.js.map",
+    "620.b4feb15a.chunk.css.map": "/pwa-test/static/css/620.b4feb15a.chunk.css.map",
+    "620.1050120d.chunk.js.map": "/pwa-test/static/js/620.1050120d.chunk.js.map",
+    "538.b4feb15a.chunk.css.map": "/pwa-test/static/css/538.b4feb15a.chunk.css.map",
+    "538.960ff58b.chunk.js.map": "/pwa-test/static/js/538.960ff58b.chunk.js.map",
+    "377.1614e686.chunk.js.map": "/pwa-test/static/js/377.1614e686.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.4f1e0cce.js"
+  ]
+}
