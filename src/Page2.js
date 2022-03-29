@@ -18,12 +18,12 @@ function Page() {
   return (
     <div className="App">
       page two
-      {/* {isVisible && ( */}
-      <>
-        <button onClick={hide}>Close</button>
-        <button onClick={promptToInstall}>Add to homescreen</button>
-      </>
-      {/* )} */}
+      {isVisible && (
+        <>
+          <button onClick={hide}>Close</button>
+          <button onClick={promptToInstall}>Add to homescreen</button>
+        </>
+      )}
     </div>
   );
 }
