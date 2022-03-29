@@ -28,25 +28,34 @@
 import React, { Suspense } from "react";
 import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-const Page1 = React.lazy(() => import("./Page"));
+const standalone = window.matchMedia("(display-mode: standalone)");
+
+let Page1;
+if (standalone) {
+  Page1 = React.lazy(() => import("./Page"));
+}
 const Page2 = React.lazy(() => import("./Page2"));
 
 function App() {
   return (
     <div>
       <Suspense fallback={<div>Loading...</div>}>
-        <Router>
-          <li>
-            <Link to="/pageone">One</Link>
-          </li>
-          <li>
-            <Link to="/pagetwo">Two</Link>
-          </li>
-          <Routes>
-            <Route path="/pageone" element={<Page1 />} />
-            <Route path="/pagetwo" element={<Page2 />} />
-          </Routes>
-        </Router>
+        {standalone ? (
+          <Page2 />
+        ) : (
+          <Router>
+            <li>
+              <Link to="/pageone">One</Link>
+            </li>
+            <li>
+              <Link to="/pagetwo">Two</Link>
+            </li>
+            <Routes>
+              <Route path="/pageone" element={<Page1 />} />
+              <Route path="/pagetwo" element={<Page2 />} />
+            </Routes>
+          </Router>
+        )}
       </Suspense>
     </div>
   );
