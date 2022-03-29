@@ -32,10 +32,7 @@ const standalone =
   window.navigator.standalone === true ||
   window.matchMedia("(display-mode: standalone)").matches;
 
-let Page1;
-if (standalone) {
-  Page1 = React.lazy(() => import("./Page"));
-}
+const Page1 = React.lazy(() => import("./Page"));
 const Page2 = React.lazy(() => import("./Page2"));
 
 function App() {
