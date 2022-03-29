@@ -1,7 +1,6 @@
 import React from "react";
 import { useAddToHomescreenPrompt } from "./useAddToHomescreenPrompt";
-
-// import * as serviceWorker from "./serviceWorkerRegistration";
+import * as serviceWorker from "./serviceWorkerRegistration";
 import "./App.css";
 
 function Page() {
@@ -30,4 +29,4 @@ function Page() {
 }
 
 export default Page;
-// serviceWorker.register();
+serviceWorker.register();
