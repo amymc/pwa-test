@@ -28,7 +28,9 @@
 import React, { Suspense } from "react";
 import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-const standalone = window.matchMedia("(display-mode: standalone)");
+const standalone =
+  window.navigator.standalone === true ||
+  window.matchMedia("(display-mode: standalone)").matches;
 
 let Page1;
 if (standalone) {
