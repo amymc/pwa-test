@@ -26,7 +26,7 @@
 // export default App;
 
 import React, { Suspense } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const Page1 = React.lazy(() => import("./Page"));
 const Page2 = React.lazy(() => import("./Page2"));
