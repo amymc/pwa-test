@@ -6,7 +6,10 @@ import "./App.css";
 function Page() {
   // const [prompt, promptToInstall] = useAddToHomescreenPrompt();
   const isMobile = ["iPhone", "iPad", "android"].includes(navigator.platform);
-  const [isVisible, setVisibleState] = React.useState(isMobile);
+  const isStandalone = window.matchMedia("(display-mode: standalone)");
+  const [isVisible, setVisibleState] = React.useState(
+    isMobile && !isStandalone
+  );
 
   // needsToSeePrompt() {
   //   return ['iPhone', 'iPad', 'android'].includes(navigator.platform);
